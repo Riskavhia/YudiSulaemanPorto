@@ -1,164 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="index.css" />
-    <script>
-      function Yudiporto(isiporto) {
-        var i;
-        var x = document.getElementsByClassName("yudi");
-        for (i = 0; i < x.length; i++) x[i].style.display = "none";
-        document.getElementById(isiporto).style.display = "block";
-      }
-    </script>
+<html>
+<script>
+function Yudiporto(isiporto)
+{
+var i
+var x = document.getElementsByClassName("yudi");
+for (i = 0; i < x.length; i++)
+x[i].style.display = "none";
+document.getElementById(isiporto).style.display = "block";
+}
+</script>
 
-    <style>
-      body {
-        background-repeat: no-repeat;
-      }
+<style>
+body
+{	
+background-repeat:no-repeat;
+ 
+}
+</style>
 
-	  #expe table tbody .space td {
-		visibility: hidden;
-	  }
-    </style>
-  </head>
-  <body>
-    <img src="bg.png" style="width: 100%" />
+<meta name="viewport" content="width=device-width, intial-scale=1">
+<link rel="stylesheet" href="index.css">
+		<img src="bg.png" style="width:100%">
+</div>
 
-	<!-- BUTTON BAR START -->
-    <div class="w3-bar w3-light-grey w3-card-4">
-		<button class="w3-bar-item w3-button" onclick="Yudiporto('aboutme')">
-			About Me
-		</button>
+<div class="w3-bar w3-light-grey w3-card-4">
+	<button class="w3-bar-item w3-button" onclick="Yudiporto('aboutme')">About Me</button>
+	<button class="w3-bar-item w3-button" onclick="Yudiporto('project')">Projects</button>
+	<button class="w3-bar-item w3-button" onclick="Yudiporto('skill')">Skills</button>
+	<button class="w3-bar-item w3-button" onclick="Yudiporto('contact')">Contact</button>
+	<button class="w3-bar-item w3-button" onclick="Yudiporto('expe')">Experience</button>
+</div>
 
-		<button class="w3-bar-item w3-button" onclick="Yudiporto('project')">
-        	Projects
-		</button>
+<div id="aboutme" class="w3-container yudi w3-animate-zoom w3-blue-grey" style="display:none; opacity:100%">
+<center>
+<h1><b>About Me</b></h1>
+<hr>
+<p>
+Hello! My name is Yudi Sulaeman, i'am graduate of SMA Pahlawan Toha Bandung class of 2006 who is dedicated, 
+enthusiastic and highly motivated,<br> with a strong desire to develop in the professional world. I also have work experience 
+in the distribution sector, especially goods delivery.
+</p>
+</hr>
+<p>
+<b>
+<a href="cv.html"><input type="button" class="w3-button w3-light-grey w3-round-large" value="Curriculum Vitae"></a>
+</b>
+</p>
+<p>
+<b>
+<a onclick="Yudiporto('project')"><input type="button" class="w3-button w3-light-grey w3-round-large" value="Next"></a>
+</b>
+</p>
+
+</div>
+
+<div id="project" class="w3-container yudi w3-animate-zoom w3-blue-grey" style="display:none">
+<h1><b>Projects</b></h1>
+<hr>
+<ul>
+	<li>
+		<strong>Shipping cost optimization program</strong> - Reducing external vendor shipping costs and other costs.
+	</li>
+	<li>
+		<strong>Estimated time of arrival</strong> - 100% delivery accuracy.
+	</li>
+	<li>
+		<strong>Route optimization</strong> - Merging routes of two regions into one.
+	</li>
+</ul>
+</hr>
+<br>
+<b>
+<center>
+<a onclick="Yudiporto('aboutme')"><input type="button" class="w3-button w3-light-grey w3-round-large" value="Back"></a>
+<a onclick="Yudiporto('skill')"><input type="button" class="w3-button w3-light-grey w3-round-large" value="Next"></a>
+</center>
+</b>
+</br>
+<br>
+</br>
+</div>
+
+<div id="skill" class="w3-container yudi w3-animate-zoom w3-blue-grey" style="display:none">
+<h1><b>Skills</b></h1>
+<hr>
+<ul>
+	<li>Leadership</li>
+	<li>Problem-Solving</li>
+	<li>Proficient in Transportation Management Systems and Transportation Safety</li>
+	<li>Skilled in operating Microsoft Office, including Excel and Word</li>
+	<li>Effective communication skills</li>
+	<li>Ability to multitask and work effectively in dynamic environments</li>
+	<li>Data Analysis for Cost Efficiency</li>
+</ul>
+</hr>
+<br>
+<b>
+<center>
+<a onclick="Yudiporto('project')"><input type="button" class="w3-button w3-light-grey w3-round-large" value="Back"></a>
+<a onclick="Yudiporto('contact')"><input type="button" class="w3-button w3-light-grey w3-round-large" value="Next"></a>
+</center>
+</b>
+</br>
+<br>
+</br>
+</div>
+
+<div id="contact" class="w3-container yudi w3-animate-zoom w3-blue-grey" style="display:none">
+<h1><b>Contact</b></h1>
+<hr>
+<p>If you’d like to get in touch, feel free to email me at <b>yudisulaeman971@gmail.com</b> or <b>yudisulaeman87@outlook.co.id</b>
+<br> or connect with me on <a href="https://www.linkedin.com/in/yudi-sulaeman-5223b02b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><b>LinkedIn</b></a>.
+</p>
+</hr>
+<br>
+<b>
+<center>
+<a onclick="Yudiporto('skill')"><input type="button" class="w3-button w3-light-grey w3-round-large" value="Back"></a>
+<a onclick="Yudiporto('expe')"><input type="button" class="w3-button w3-light-grey w3-round-large" value="Next"></a>
+</center>
+</b>
+</br>
+<br>
+</br>
+</div>
 		
-		<button class="w3-bar-item w3-button" onclick="Yudiporto('skill')">
-			Skills
-		</button>
-		
-		<button class="w3-bar-item w3-button" onclick="Yudiporto('contact')">
-			Contact
-		</button>
-		
-		<button class="w3-bar-item w3-button" onclick="Yudiporto('expe')">
-			Experience
-		</button>
-	</div>
-	<!-- BUTTON BAR END -->
-
-	<div id="aboutme" class="w3-container yudi w3-animate-zoom w3-blue-grey" style="display:none; opacity:100%">
-		<h1>
-			<b>About Me</b>
-		</h1>
-		<hr>
-		<p>
-			Hello! My name is Yudi Sulaeman, i'am graduate of SMA Pahlawan Toha Bandung class of 2006 who is dedicated, 
-			enthusiastic and highly motivated,<br> with a strong desire to develop in the professional world. I also have work experience 
-			in the distribution sector, especially goods delivery.
-		</p>
-		</hr>
-		<p>
-			<center>
-				<b>
-					<a href="cv.html"><input type="button" class="w3-button w3-light-grey w3-round-large" value="Curriculum Vitae"></a>
-				</b>
-	
-				<b>
-					<a onclick="Yudiporto('project')"><input type="button" class="w3-button w3-light-grey w3-round-large" value="Next"></a>
-				</b>
-			</center>
-		</p>
-	</div>
-
-	<div id="project" class="w3-container yudi w3-animate-zoom w3-blue-grey" style="display:none">
-		<h1>
-			<b>Projects</b>
-		</h1>
-		<hr>
-		<ul>
-			<li>
-				<strong>Shipping cost optimization program</strong> - Reducing external vendor shipping costs and other costs.
-			</li>
-			<li>
-				<strong>Estimated time of arrival</strong> - 100% delivery accuracy.
-			</li>
-			<li>
-				<strong>Route optimization</strong> - Merging routes of two regions into one.
-			</li>
-		</ul>
-		</hr>
-		<br>
-		<b>
-			<center>
-				<a onclick="Yudiporto('aboutme')"><input type="button" class="w3-button w3-light-grey w3-round-large" value="Back"></a>
-				<a onclick="Yudiporto('skill')"><input type="button" class="w3-button w3-light-grey w3-round-large" value="Next"></a>
-			</center>
-		</b>
-		</br>
-		<br>
-		</br>
-	</div>
-
-	<div id="skill" class="w3-container yudi w3-animate-zoom w3-blue-grey" style="display:none">
-		<h1>
-			<b>Skills</b>
-		</h1>
-		<hr>
-		<ul>
-			<li>Leadership</li>
-			<li>Problem-Solving</li>
-			<li>Proficient in Transportation Management Systems and Transportation Safety</li>
-			<li>Skilled in operating Microsoft Office, including Excel and Word</li>
-			<li>Effective communication skills</li>
-			<li>Ability to multitask and work effectively in dynamic environments</li>
-			<li>Data Analysis for Cost Efficiency</li>
-		</ul>
-		</hr>
-
-		<br>
-		
-		<b>
-			<center>
-				<a onclick="Yudiporto('project')"><input type="button" class="w3-button w3-light-grey w3-round-large" value="Back"></a>
-				<a onclick="Yudiporto('contact')"><input type="button" class="w3-button w3-light-grey w3-round-large" value="Next"></a>
-			</center>
-		</b>
-		
-		</br>
-		<br>
-		</br>
-	</div>
-
-	<div id="contact" class="w3-container yudi w3-animate-zoom w3-blue-grey" style="display:none">
-		<h1>
-			<b>Contact</b>
-		</h1>
-		<hr>
-		<p>
-			If you’d like to get in touch, feel free to email me at <b>yudisulaeman971@gmail.com</b> or <b>yudisulaeman87@outlook.co.id</b>
-			<br> or connect with me on <a href="https://www.linkedin.com/in/yudi-sulaeman-5223b02b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><b>LinkedIn</b></a>.
-		</p>
-		</hr>
-		
-		<br>
-		
-		<b>
-			<center>
-				<a onclick="Yudiporto('skill')"><input type="button" class="w3-button w3-light-grey w3-round-large" value="Back"></a>
-				<a onclick="Yudiporto('expe')"><input type="button" class="w3-button w3-light-grey w3-round-large" value="Next"></a>
-			</center>
-		</b>
-		</br>
-		<br>
-		</br>
-	</div>
-
-	<div id="expe" class="w3-container yudi w3-animate-zoom w3-blue-grey" style="display:none">
+<div id="expe" class="w3-container yudi w3-animate-zoom w3-blue-grey" style="display:none">
 		<h1>
 			<b>Experience</b>
 		</h1>
@@ -167,7 +134,7 @@
 				<tbody>
 					<tr>
 						<td>
-							<img src="cc.png" style="width:100%;">
+							<img src="cc.png" style="width:90%;">
 						</td>
 						<td>
 							<b>PT. Coca Cola Distribussindo Indonesia, Bandung November 2007 s/d Maret 2013</b>
@@ -180,12 +147,12 @@
 					</tr>
 
 					<tr class="space">
-						<td>hioahwdh</td>
+						<td><br></br></td>
 					</tr>
 					
 					<tr>
 						<td>
-							<img src="al.png" style="width:100%">
+							<img src="al.png" style="width:90%">
 						</td>
 						<td>
 							<strong>PT.Sumber Alfaria Trijaya Tbk, Bandung Juni 2013 s/d September 2013</strong>
@@ -196,12 +163,12 @@
 					</tr>
 
 					<tr class="space">
-						<td>hioahwdh</td>
+						<td><br></br></td>
 					</tr>
 
 					<tr>
 						<td>
-							<img src="ense.png" style="width:100%">
+							<img src="ense.png" style="width:90%">
 						</td>
 						<td>
 							<strong>PT.Enseval Putera Megatrading Tbk, Oktober 2013 s/d Mei 2024</strong>
@@ -216,12 +183,12 @@
 					</tr>
 					
 					<tr class="space">
-						<td>hioahwdh</td>
+						<td><br></br></td>
 					</tr>
 
 					<tr>
 						<td>
-							<img src="spil.png" style="width:100%">
+							<img src="spil.png" style="width:90%">
 						</td>
 						<td>
 							<strong>PT.Spil Toll Indonesia Penempatan Pt.Linde Indonesia Karawang Juni 2024 s/d November 2024</strong>
@@ -242,4 +209,4 @@
 		</br>
 	</div>
   </body>
-</html>
+</div>
